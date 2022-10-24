@@ -39,7 +39,11 @@ contract WelcomeToSolidity {
         uint16 age;
         address personAddress;
     }
-    
+
+   // In Solidity, mapping functions similarly to a hashtable or dictionary in other programming languages.
+   // Mapping is the most frequently used reference type in Solidity. Mapping types are used to store data in the form of key-value pairs, where the key can be any of the inbuilt data types except for reference types, and the value can be any type.
+   // For example we can use a mapping of addresses to uint to keep score of how much units of a certain coin they contain
+   mapping(address => uint) public balances;
 
 
     // is adding two integers
