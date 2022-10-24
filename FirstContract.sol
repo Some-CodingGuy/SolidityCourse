@@ -25,11 +25,20 @@ contract WelcomeToSolidity {
     // Arrays are a great way to store multiple values of the same type in a variable. Arrays can be made using any kind of data type
     // There are 2 types or arrays:
     //       - Dynamic size arrays: The size of the array is not determined when they are declared, but at runtime.
-    int[] integerArray = [ unit (60), 70, 80, 90, 100, 110]  ;
+    int[] integerArray = [60, 70, 80, 90, 100, 110]  ;
     //       - Fixed size arrays: They have a fixed amount of elements they can contain
     //          * They can be initialised 2 ways:
-    int[8] integerArray = [uint(50), 60, 70, 80, 90, 100, 110, 120];
+    int[8] integerArray = [50, 60, 70, 80, 90, 100, 110, 120];
     int[] fixedSizeArray = new int[](8);
+
+    // Now comes one of the best parts of Solidity: structures
+    // Structures are custom datatypes that we can use to customize the code to our necessities. Do you need a new datatype Person to store data related to people? Create a Person structure!
+    struct Person {
+        string name;
+        string surname;
+        uint16 age;
+        address personAddress;
+    }
     
 
 
